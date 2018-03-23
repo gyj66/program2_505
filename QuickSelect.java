@@ -7,7 +7,7 @@ class QuickSelect
 
 	static int comparnums;
 
-   Integer select(List<Integer> list,int l,int r,int k)
+   int select(List<Integer> list,int l,int r,int k)
   {
    int size=r-l+1;
    if(size<9)
@@ -171,7 +171,7 @@ BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
    QuickSelect result=new QuickSelect();
    long start=System.currentTimeMillis();
-	Integer median =result.select(ar,0,ar.size()-1,k);
+	int median =result.select(ar,0,ar.size()-1,k);
     long end=System.currentTimeMillis(); 
     Integer total= (int)(long)(end-start);
   
