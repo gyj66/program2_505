@@ -43,9 +43,9 @@ Integer comparnums=comparisons;
   int median=ar.get(k);
 
 	
-System.out.println(("median"+","+median);
-System.out.println(("runtime"+","+total);
- System.out.println(("comparisons"+","+comparnums);
+System.out.println("median"+","+median);
+System.out.println("runtime"+","+total);
+ System.out.println("comparisons"+","+comparnums);
 
 }
 
