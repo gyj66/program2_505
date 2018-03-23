@@ -176,9 +176,9 @@ BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     Integer total= (int)(long)(end-start);
   
 
-   System.out.println(("median"+","+median);
-  System.out.println(("runtime"+","+total);
- System.out.println(("comparisons"+","+comparnums);
+   System.out.println("median"+","+median);
+  System.out.println("runtime"+","+total);
+ System.out.println("comparisons"+","+comparnums);
 
 
 
