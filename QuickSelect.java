@@ -7,7 +7,7 @@ class QuickSelect
 
 	static int comparnums;
 
-  pulic Integer select(List<Integer> list,int l,int r,int k)
+   Integer select(List<Integer> list,int l,int r,int k)
   {
    int size=r-l+1;
    if(size<9)
