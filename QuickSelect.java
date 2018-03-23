@@ -139,11 +139,11 @@ public int partition(List<Integer> list, int l, int r)
 
        while(true)
        {
-           while(list.get(left++)<pivot)
+           while(list.get(++left)<pivot)
            	comparnums++;
 
 
-           while(list.get(right--)>pivot)
+           while(list.get(--right)>pivot)
              comparnums++;
 
             comparnums+=2;
@@ -156,7 +156,7 @@ public int partition(List<Integer> list, int l, int r)
 
        }
     
-    swap(list,left,r-1);
+    swap(list,left,r);
 
     return left;
   
