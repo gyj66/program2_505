@@ -1,7 +1,12 @@
+import java.lang.*;
+import java.util.*;
+import java.io.*;
+
+
 class SortUtility
 {
        
-
+  static int comparisons=0;
 
 
 public static void main(String[] args)
@@ -22,9 +27,9 @@ BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
 	}
 	
- int comparisons=0;
+
 long start=System.currentTimeMillis();
-     Integer comparnums=ar.sort(new Comparator<Integer>() {
+     ar.sort(new Comparator<Integer>() {
     @Override
     public int compare(Integer o1, Integer o2) {
         comparisons++;
@@ -32,13 +37,13 @@ long start=System.currentTimeMillis();
     } 
     });       
 long end=System.currentTimeMillis(); 
-long total=end-start;
-   
-   int k=(ar.size()-1)/2;
+Integer total= (int)(long)(end-start);
+Integer comparnums=comparisons;
+  int k=(ar.size()-1)/2;
   int median=ar.get(k);
 
-
-System.err.println("median"+","+total);
+	
+System.err.println("median"+","+median);
  System.err.println("runtime"+","+total);
  System.err.println("comparisons"+","+comparnums);
 
@@ -48,3 +53,6 @@ System.err.println("median"+","+total);
 
 
 }
+
+
+
