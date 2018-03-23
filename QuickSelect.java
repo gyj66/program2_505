@@ -46,13 +46,13 @@ class QuickSelect
 
     }
 
-
+return INT_MAX;
   
   }
 
 
 
- public Integer medianOf3(List<Integer> list, int l, int r)
+  Integer medianOf3(List<Integer> list, int l, int r)
  {
     int center=(l+r)/2;
     
