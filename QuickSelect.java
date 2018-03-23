@@ -32,7 +32,7 @@ class QuickSelect
    }
     else
     {
-    	if(k>0)
+    	if(k>0&& k <= r - l + 1)
      { int median= medianOf3(list, l, r);
       int pindex=partitionIt(list,l,r,median);
       
