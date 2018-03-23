@@ -46,7 +46,7 @@ class QuickSelect
 
     }
 
-return INT_MAX;
+return 0;
   
   }
 
