@@ -133,23 +133,53 @@ public int partitionIt(List<Integer> list,int l, int r, int pivot)
 public int partition(List<Integer> list, int l, int r)
 {
   
+  int left=l-1;
+	int right=r;
+       
 
-   int pivot = list.get(r);
-        int i = (l-1); 
-        for (int j=l; j<r; j++)
-        {
-            comparnums++;
-            if (list.get(j) <= pivot)
-            {
-                i++;
+       while(true)
+       {
+           while(list.get(++left)<pivot)
+           	comparnums++;
+
+
+           while(list.get(--right)>pivot)
+             comparnums++;
+
+            comparnums+=2;
+            if(left>=right)
+            	break;
+             else
+             	swap(list,left,right);
+
+
+
+       }
+    
+    swap(list,left,r-1);
+
+    return left;
+  
+	
+	
+
+	
+// 	int pivot = list.get(r);
+//         int i = (l-1); 
+//         for (int j=l; j<r; j++)
+//         {
+//             comparnums++;
+//             if (list.get(j) <= pivot)
+//             {
+//                 i++;
  
-               swap(list,i,j);
-            }
-        }
+//                swap(list,i,j);
+//             }
+//         }
  
-        swap(list,i+1,r);
+//         swap(list,i+1,r);
  
-        return i+1;
+//         return i+1;
 
 }
 
