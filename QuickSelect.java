@@ -173,7 +173,7 @@ BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
    long start=System.currentTimeMillis();
 	Integer median =result.select(ar,0,ar.size()-1,k);
     long end=System.currentTimeMillis(); 
-     long total=end-start;
+    Integer total= (int)(long)(end-start);
   
 
    System.err.println("median"+","+median);
