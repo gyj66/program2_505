@@ -15,7 +15,7 @@ class QuickSelect
     
     int pindex=partition(list,l,r);
 
-    if(k>0)
+    if(k>0&& k <= r - l + 1)
     {
      if(pindex==l+k-1)
       	return list.get(pindex);
