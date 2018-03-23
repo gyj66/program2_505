@@ -75,7 +75,7 @@ return 0;
   {
       int temp=list.get(index1);
       list.set(index1,list.get(index2));
-      list.set(index2,list.get(index1));
+      list.set(index2,temp);
 
 
   }
