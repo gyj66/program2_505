@@ -92,7 +92,7 @@ public int partitionIt(List<Integer> list,int l, int r, int pivot)
            	comparnums++;
 
 
-          while(list.get(--right).compareTo(pivot)<0)
+          while(list.get(--right).compareTo(pivot)>0)
              comparnums++;
 
             comparnums+=2;
@@ -143,7 +143,7 @@ public int partition(List<Integer> list, int l, int r)
            	comparnums++;
 
 
-          while(list.get(--right).compareTo(pivot)<0)
+          while(list.get(--right).compareTo(pivot)>0)
              comparnums++;
 
             comparnums+=2;
