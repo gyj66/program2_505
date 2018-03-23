@@ -56,11 +56,11 @@ return 0;
  {
     int center=(l+r)/2;
     
-    if(list.get(l)>list.get(center))
+    if(list.get(l).compareTo(list.get(center))>0)
     	swap(list,l,center);
-    if(list.get(l)>list.get(r))
+    if(list.get(l).compareTo(list.get(r))>0)
     	swap(list,l,r);
-    if(list.get(center)>list.get(r))
+    if(list.get(center).compareTo(list.get(r))>0)
     	swap(list,center,r);
 
     swap(list,center,r-1);
@@ -88,11 +88,11 @@ public int partitionIt(List<Integer> list,int l, int r, int pivot)
 
        while(true)
        {
-           while(list.get(++left)<pivot)
+           while(list.get(++left).compareTo(pivot)<0)
            	comparnums++;
 
 
-           while(list.get(--right)>pivot)
+          while(list.get(--right).compareTo(pivot)<0)
              comparnums++;
 
             comparnums+=2;
@@ -139,11 +139,11 @@ public int partition(List<Integer> list, int l, int r)
 
        while(true)
        {
-           while(list.get(++left)<pivot)
+             while(list.get(++left).compareTo(pivot)<0)
            	comparnums++;
 
 
-           while(list.get(--right)>pivot)
+          while(list.get(--right).compareTo(pivot)<0)
              comparnums++;
 
             comparnums+=2;
