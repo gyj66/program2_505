@@ -133,8 +133,8 @@ public int partitionIt(List<Integer> list,int l, int r, int pivot)
 public int partition(List<Integer> list, int l, int r)
 {
   int pivot=list.get(r);
-  int left=l;
-	int right=r-1;
+  int left=l-1;
+	int right=r;
        
 
        while(true)
