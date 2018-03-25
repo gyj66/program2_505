@@ -143,7 +143,7 @@ public int partition(List<Integer> list, int l, int r)
            	comparnums++;
 
 
-          while(list.get(--right).compareTo(pivot)>0)
+          while(right>0&&list.get(--right).compareTo(pivot)>0)
              comparnums++;
 
             comparnums+=2;
