@@ -5,9 +5,9 @@ import java.io.*;
 class QuickSelect
 {
 
-	static int comparnums;
+	static int comparnums;  //counter
 
-   int select(List<Integer> list,int l,int r,int k)
+   int select(List<Integer> list,int l,int r,int k) 
   {
    int size=r-l+1;
    if(size<9)
